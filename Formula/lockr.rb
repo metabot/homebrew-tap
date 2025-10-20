@@ -5,23 +5,23 @@
 class Lockr < Formula
   desc "Secure personal vault CLI with interactive fuzzy search"
   homepage "https://github.com/metabot/lockr"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   depends_on "sqlcipher"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/metabot/lockr/releases/download/v0.1.2/lockr_0.1.2_Darwin_x86_64.tar.gz"
-    sha256 "a6ea9176a564dd31ecd1a9a45ea311bca9bd17b4aefca34a382efc436cbb5a31"
+    url "https://github.com/metabot/lockr/releases/download/v0.1.3/lockr_0.1.3_Darwin_x86_64.tar.gz"
+    sha256 "bf5b80df898d1b8fa270877ee54494ccfa12f15a627ce4310a2b1ff39168ed87"
 
     def install
       bin.install "lockr"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/metabot/lockr/releases/download/v0.1.2/lockr_0.1.2_Darwin_arm64.tar.gz"
-    sha256 "8876617a3cd6347b0ab4ff7ffd2d8b8f2781f0896f73873f605f2cbd4b62e41f"
+    url "https://github.com/metabot/lockr/releases/download/v0.1.3/lockr_0.1.3_Darwin_arm64.tar.gz"
+    sha256 "61223656ba70bb0367d681fb6b63b2f233e72e0ba8108200819fbd35adcb69b7"
 
     def install
       bin.install "lockr"
